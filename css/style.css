@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.box {
+    background-color: rgb(226, 217, 217);
+    display: block;
+    height: 100px;
+    position: relative;
+}
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size:40px;
+    position: absolute;
+    left:44%; 
+    line-height: 100px;
+}
+h3 {
+    margin:0;
+    padding: 0;
+    float: right;
+    width: 170px;
+}
+p {
+    padding:30px 10px 10px ;
+}
+/* Style h3 */
+.ga>div >h3 {
+    border: 1px solid;
+    background-color: rgb(213, 136, 173);
+
+}
+.bo>div>h3 {
+    border: 1px solid;
+    background-color:rgb(202, 80, 80);
+}
+.sushi>div>h3 {
+    border: 1px solid;
+    background-color:rgb(197, 172, 130);
+}
+/* Phan body */
+.ga>div{
+    font-weight: bold;
+    background-color:darkgrey;
+    text-align: center;
+    border: 1px solid ;
+    margin:10px;
+   
+}
+.bo>div{
+    font-weight: bold;
+    background-color:darkgrey;
+    text-align: center;
+    border: 1px solid ;
+    margin:10px;
+
+
+}
+
+.sushi>div{
+    font-weight: bold;
+    background-color:darkgrey;
+    text-align: center;
+    border: 1px solid ;
+    margin:10px;
+}
+/* Setting devices */
+@media(min-width:992px)
+{
+    .dish {
+        display: flex;
+        justify-content:space-around;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .ga{
+        display: flex;
+        width: 50%;
+        float:left;
+        justify-content: space-around;
+    }
+    .bo {
+        position: relative;
+        display: flex;
+        width: 50%;
+        height: auto;
+        float:right;
+        justify-content: space-around;
+    }
+    .sushi{
+        margin-top: 150px;
+        left: 5%;
+        position:absolute;
+        width: 90%;
+        height:fit-content; 
+        justify-content: space-around;
+        
+    }
+}
+@media (max-width :767px) {
+    h1 {
+        left: 25%;
+    }
+}
